@@ -18,7 +18,7 @@ export class Cus {
   cus_lastname: string; // สกุล
 
   @Column()
-  cus_phone: string; // เบอร์โทร
+  cus_phone: number; // เบอร์โทร
 
   @Column()
   role_id: string; // รหัสตำแหน่ง (Foreign Key)

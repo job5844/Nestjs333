@@ -22,7 +22,7 @@ export class CusService {
     const newCus = this.cusRepository.create(Cus);
     return this.cusRepository.save(newCus);
   }
-
+  
   async update(cus_id: number, Cus: Partial<Cus>): Promise<Cus> {
     await this.cusRepository.update(cus_id, Cus);
     return this.cusRepository.findOne({ where: { cus_id } });
